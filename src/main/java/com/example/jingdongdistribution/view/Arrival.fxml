@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+<SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="922.0" prefWidth="2443.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jingdongdistribution.view.ArrivalController">
+    <items>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="550.0" prefWidth="2424.0">
+            <children>
+                <ChoiceBox fx:id="OriginatingCitySelect" layoutX="85.0" layoutY="36.0" prefWidth="150.0" >
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="上海" />
+                            <String fx:value="北京" />
+                            <String fx:value="广州" />
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+                <Label fx:id="OriginatingCity" layoutX="21.0" layoutY="36.0" prefHeight="30.0" prefWidth="64.0" text="始发城市" />
+                <Label fx:id="DestinationCity" layoutX="294.0" layoutY="36.0" prefHeight="30.0" prefWidth="64.0" text="目的城市" />
+                <Label fx:id="DestinationWarehouse" layoutX="558.0" layoutY="36.0" prefHeight="30.0" prefWidth="64.0" text="目的仓别" />
+                <Label fx:id="State" layoutX="809.0" layoutY="36.0" prefHeight="30.0" prefWidth="64.0" text="在途状态" />
+                <Label fx:id="PowerOfAttorney" layoutX="1071.0" layoutY="36.0" prefHeight="30.0" prefWidth="81.0" text="委托书编号" />
+                <Label fx:id="StartTime" layoutX="21.0" layoutY="93.0" prefHeight="30.0" prefWidth="64.0" text="起始时间" />
+                <Label fx:id="Deadline" layoutX="294.0" layoutY="93.0" prefHeight="30.0" prefWidth="64.0" text="截止时间" />
+                <Label fx:id="BusinessType" layoutX="558.0" layoutY="93.0" prefHeight="30.0" prefWidth="64.0" text="业务类型" />
+                <Label fx:id="Carrier" layoutX="809.0" layoutY="93.0" prefHeight="30.0" prefWidth="64.0" text="承运商" textAlignment="CENTER" />
+                <Label fx:id="Shipper" layoutX="1080.0" layoutY="96.0" prefHeight="30.0" prefWidth="64.0" text="托运单号" />
+                <Button fx:id="check" onAction="#toArrivalResult" layoutX="508.0" layoutY="150.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="81.0" text="查询" />
+                <ChoiceBox fx:id="DestinationCitySelect" layoutX="358.0" layoutY="36.0" prefWidth="150.0" >
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="上海" />
+                            <String fx:value="北京" />
+                            <String fx:value="广州" />
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+                <ChoiceBox fx:id="DestinationWarehouseSelect" layoutX="622.0" layoutY="36.0" prefWidth="150.0" >
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="上海" />
+                            <String fx:value="北京" />
+                            <String fx:value="广州" />
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+                <ChoiceBox fx:id="StateSelect" layoutX="873.0" layoutY="36.0" prefWidth="150.0" >
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="在途" />
+                            <String fx:value="到站点" />
+                            <String fx:value="到达收货地点" />
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+                <ChoiceBox fx:id="BusinessTypeSelect" layoutX="622.0" layoutY="96.0" prefWidth="150.0" >
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="整车" />
+                            <String fx:value="零担" />
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+                <ChoiceBox fx:id="CarrierSelect" layoutX="873.0" layoutY="93.0" prefWidth="150.0" >
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="极兔快递" />
+                            <String fx:value="中通" />
+                            <String fx:value="申通" />
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+                <TextField fx:id="PowerOfAttorneyText" layoutX="1152.0" layoutY="36.0" prefHeight="30.0" prefWidth="170.0" />
+                <TextField fx:id="ShipperText" layoutX="1152.0" layoutY="96.0" prefHeight="30.0" prefWidth="170.0" />
+                <TextField fx:id="StartTimeText" layoutX="85.0" layoutY="93.0" prefHeight="30.0" prefWidth="150.0" />
+                <TextField fx:id="DeadlineText" layoutX="358.0" layoutY="96.0" prefHeight="30.0" prefWidth="150.0" />
+                <Button fx:id="back" layoutX="760.0" layoutY="150.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="81.0" text="返回" />
+            </children>
+        </AnchorPane>
+    </items>
+</SplitPane>

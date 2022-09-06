@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.jingdongdistribution.view.FreightAccountController">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="-62.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0">
+               <children>
+                  <HBox fx:id="HB1" layoutX="66.0" layoutY="154.0" prefHeight="48.0" prefWidth="342.0">
+                     <children>
+                        <Label fx:id="PowerOfAttorneyNumber" prefHeight="253.0" prefWidth="190.0" text="委托书编号" />
+                        <TextArea fx:id="PowerOfAttorneyNumberText" prefHeight="66.0" prefWidth="285.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="HB2" layoutX="467.0" layoutY="150.0" prefHeight="48.0" prefWidth="402.0">
+                     <children>
+                        <Label fx:id="ConsignmentNoteNumber" prefHeight="72.0" prefWidth="190.0" text="托运单号" />
+                        <TextField fx:id="ConsignmentNoteNumberText" prefHeight="66.0" prefWidth="285.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="HB3" layoutX="911.0" layoutY="150.0" prefHeight="25.0" prefWidth="315.0">
+                     <children>
+                        <Label fx:id="Courier" prefHeight="48.0" prefWidth="170.0" text="承运商" />
+                        <ChoiceBox fx:id="CourierChoiceBox" prefHeight="72.0" prefWidth="330.0">
+                        <items>
+                           <FXCollections fx:factory="observableArrayList">
+                              <String fx:value="京东快递" />
+                              <String fx:value="顺丰快递" />
+                              <String fx:value="中通快递" />
+                           </FXCollections>
+                        </items>
+                     </ChoiceBox>
+                     </children>
+                  </HBox>
+<!--                  <Button fx:id="DeriveBtn" layoutX="1040.0" layoutY="281.0" mnemonicParsing="false" onAction="#Derive" prefHeight="48.0" prefWidth="140.0" text="导出" />-->
+                  <HBox fx:id="HB4" layoutX="66.0" layoutY="281.0" prefHeight="31.0" prefWidth="350.0">
+                     <children>
+                        <Label fx:id="StartTime" prefHeight="72.0" prefWidth="130.0" text="起始时间" />
+                        <DatePicker fx:id="StartTimePicker" onAction="#StartTimePick" prefHeight="83.0" prefWidth="280.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="HB5" layoutX="541.0" layoutY="281.0" prefHeight="31.0" prefWidth="350.0">
+                     <children>
+                        <Label fx:id="EndTime" prefHeight="72.0" prefWidth="130.0" text="截止时间" />
+                        <DatePicker fx:id="EndTimePicker" onAction="#EndTimePick" prefHeight="83.0" prefWidth="280.0" />
+                     </children>
+                  </HBox>
+                  <Button fx:id="EnquiryBtn" layoutX="348.0" layoutY="369.0" mnemonicParsing="false" onAction="#Enquiry" prefHeight="36.0" prefWidth="121.0" text="查询" />
+                  <Button fx:id="AdjustBtn" layoutX="564.0" layoutY="369.0" mnemonicParsing="false" onAction="#Adjust" prefHeight="36.0" prefWidth="121.0" text="其他调整" />
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Label fx:id="tip" prefHeight="107.0" prefWidth="130.0"  layoutX="780.0" layoutY="369.0"/>
+            <TableView fx:id="tableview" layoutX="256.0" layoutY="81.0" prefHeight="393.0" prefWidth="1278.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <columns>
+                  <TableColumn fx:id="PoanColumn" prefWidth="314.0" text="委托书编号" />
+                  <TableColumn fx:id="CnnColumn" prefWidth="315.0" text="托运编号" />
+                  <TableColumn fx:id="SfColumn" prefWidth="208.0" text="次提货费" />
+                  <TableColumn fx:id="DdColumn" prefWidth="158.0" text="延迟扣款" />
+                  <TableColumn fx:id="OdColumn" prefWidth="152.0" text="其他扣款" />
+                  <TableColumn fx:id="OdrColumn" prefWidth="130.0" text="其他扣款原因" />
+               </columns>
+            </TableView>
+         </children></AnchorPane>
+   </items>
+</SplitPane>

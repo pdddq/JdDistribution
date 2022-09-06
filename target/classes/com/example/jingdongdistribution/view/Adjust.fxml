@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jingdongdistribution.view.AdjustController">
+    <children>
+        <HBox fx:id="HB1" layoutX="111.0" layoutY="100.0" prefHeight="48.0" prefWidth="371.0">
+            <children>
+                <Label fx:id="PowerOfAttorneyNumber" prefHeight="48.0" prefWidth="231.0" text="委托书编号" />
+                <TextArea fx:id="PowerOfAttorneyNumberText" disable="true" prefHeight="48.0" prefWidth="354.0"  />
+            </children>
+        </HBox>
+        <HBox fx:id="HB2" layoutX="578.0" layoutY="105.0" prefHeight="48.0" prefWidth="402.0">
+            <children>
+                <Label fx:id="ConsignmentNoteNumber" prefHeight="72.0" prefWidth="303.0" text="托运单号" />
+                <TextField fx:id="ConsignmentNoteNumberText" disable="true" prefHeight="88.0" prefWidth="505.0"  />
+            </children>
+        </HBox>
+        <HBox fx:id="HB21" layoutX="102.0" layoutY="238.0" prefHeight="48.0" prefWidth="402.0">
+            <children>
+                <Label fx:id="Cfb" prefHeight="72.0" prefWidth="303.0" text="原次提货费" />
+                <TextField fx:id="ConsignmentNoteNumberText1" disable="true" prefHeight="48.0" prefWidth="452.0" text="15.0" />
+            </children>
+        </HBox>
+        <HBox fx:id="HB22" layoutX="592.0" layoutY="238.0" prefHeight="48.0" prefWidth="402.0">
+            <children>
+                <Label fx:id="Sf" prefHeight="72.0" prefWidth="303.0" text="次提货费" />
+                <TextField fx:id="ConsignmentNoteNumberText2" prefHeight="88.0" prefWidth="505.0" />
+            </children>
+        </HBox>
+        <HBox fx:id="HB23" layoutX="96.0" layoutY="376.0" prefHeight="48.0" prefWidth="402.0">
+            <children>
+                <Label fx:id="Odf" prefHeight="72.0" prefWidth="303.0" text="原其他扣款" />
+                <TextField fx:id="ConsignmentNoteNumberText3" disable="true" prefHeight="48.0" prefWidth="458.0"  />
+            </children>
+        </HBox>
+        <HBox fx:id="HB24" layoutX="572.0" layoutY="368.0" prefHeight="48.0" prefWidth="402.0">
+            <children>
+                <Label fx:id="Od" prefHeight="72.0" prefWidth="303.0" text="其他扣款" />
+                <TextField fx:id="ConsignmentNoteNumberText4" prefHeight="88.0" prefWidth="505.0" />
+            </children>
+        </HBox>
+        <HBox fx:id="HB25" layoutX="80.0" layoutY="523.0" prefHeight="48.0" prefWidth="451.0">
+            <children>
+                <Label fx:id="ConsignmentNoteNumber3" prefHeight="48.0" prefWidth="440.0" text="原其他扣款原因" />
+                <TextField fx:id="ConsignmentNoteNumberText5" disable="true" prefHeight="48.0" prefWidth="550.0"  />
+            </children>
+        </HBox>
+        <HBox fx:id="HB26" layoutX="574.0" layoutY="513.0" prefHeight="58.0" prefWidth="451.0">
+            <children>
+                <Label fx:id="ConsignmentNoteNumber4" prefHeight="72.0" prefWidth="303.0" text="其他扣款原因" />
+                <TextField fx:id="ConsignmentNoteNumberText6" prefHeight="88.0" prefWidth="505.0" />
+            </children>
+        </HBox>
+        <HBox fx:id="HB27" layoutX="300.0" layoutY="600.0" prefHeight="58.0" prefWidth="451.0">
+            <children>
+                <Label fx:id="tip" prefHeight="72.0" prefWidth="303.0"  />
+            </children>
+        </HBox>
+        <Button fx:id="OkBtn" layoutX="600.0" layoutY="600" mnemonicParsing="false" onAction="#Ok" prefHeight="48.0" prefWidth="140.0" text="确认" />
+
+    </children>
+</AnchorPane>
+

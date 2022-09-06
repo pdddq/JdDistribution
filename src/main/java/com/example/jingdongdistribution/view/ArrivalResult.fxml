@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="275.0" prefWidth="591.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jingdongdistribution.view.ArrivalResultController">
+    <items>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="281.0" prefWidth="597.0">
+   <children>
+      <TableView  layoutX="32.0" layoutY="14.0" prefHeight="200.0" prefWidth="526.0">
+        <columns>
+          <TableColumn fx:id="PowerOfAttorney" prefWidth="97.0" text="委托书编号" />
+          <TableColumn fx:id="Carrier" prefWidth="53.0" text="承运商" />
+            <TableColumn fx:id="TruckParts" prefWidth="75.0" text="整车零担" />
+            <TableColumn fx:id="Shipper" prefWidth="75.0" text="托运单号" />
+            <TableColumn fx:id="BusinessType" prefWidth="75.0" text="业务类型" />
+            <TableColumn fx:id="Consignor" prefWidth="75.0" text="发货人" />
+            <TableColumn fx:id="Action" prefWidth="75.0" text="操作" />
+        </columns>
+      </TableView>
+            <Button fx:id="back"  layoutX="259.0" layoutY="221.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="72.0" text="返回" />
+   </children>
+</AnchorPane>
+    </items>
+</SplitPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jingdongdistribution.view.BillingInquiryController">
+    <children>
+        <HBox fx:id="hb" layoutX="30.0" layoutY="74.0" prefHeight="421.0" prefWidth="1133.0">
+            <children>
+                <VBox fx:id="vb1" prefHeight="603.0" prefWidth="702.0">
+                    <children>
+                        <HBox fx:id="hb1" prefHeight="95.0" prefWidth="540.0">
+                            <children>
+                                <Label fx:id="Poan" prefHeight="95.0" prefWidth="139.0" text="委托书编号" />
+                                <TextField fx:id="PoanText" editable="false" prefHeight="95.0" prefWidth="395.0" />
+                            </children>
+                        </HBox>
+                        <HBox fx:id="hb2" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="Carrier" prefHeight="115.0" prefWidth="137.0" text="承运商" />
+                                <TextField fx:id="CText" editable="false" prefHeight="117.0" prefWidth="406.0" />
+                            </children>
+                        </HBox>
+                        <HBox fx:id="hb3" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="volume" prefHeight="135.0" prefWidth="137.0" text="体积" />
+                                <TextField fx:id="volumeText" editable="false" prefHeight="100.0" prefWidth="412.0" />
+                            </children>
+                        </HBox>
+                        <HBox fx:id="hb4" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="Tos" prefHeight="100.0" prefWidth="141.0" text="业务类型" />
+                                <TextField fx:id="TosText" editable="false" prefHeight="100.0" prefWidth="408.0" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox fx:id="vb2" prefHeight="603.0" prefWidth="668.0">
+                    <children>
+                        <HBox fx:id="hb5" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="Cnn" prefHeight="100.0" prefWidth="111.0" text="托运单号" />
+                                <TextField fx:id="CnnText" editable="false" prefHeight="100.0" prefWidth="402.0" />
+                            </children>
+                        </HBox>
+                        <HBox fx:id="hb6" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="Sr" prefHeight="97.0" prefWidth="112.0" text="始发仓库" />
+                                <TextField fx:id="SrText" editable="false" prefHeight="105.0" prefWidth="403.0" />
+                            </children>
+                        </HBox>
+                        <HBox fx:id="hb7" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="Weight" prefHeight="113.0" prefWidth="108.0" text="重量" />
+                                <TextField fx:id="WeightText" editable="false" prefHeight="100.0" prefWidth="406.0" />
+                            </children>
+                        </HBox>
+                        <HBox fx:id="hb8" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="St" prefHeight="108.0" prefWidth="111.0" text="开始时间" />
+                                <TextField fx:id="StText" editable="false" prefHeight="110.0" prefWidth="412.0" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <Label fx:id="pfreight" layoutX="325.0" layoutY="600.0" prefHeight="46.0" prefWidth="177.0" />
+        <Label fx:id="sfreight" layoutX="836.0" layoutY="600.0" prefHeight="53.0" prefWidth="204.0" />
+    </children>
+</AnchorPane>
